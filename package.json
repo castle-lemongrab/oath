@@ -1,6 +1,6 @@
 {
   "name": "@castlelemongrab/oath",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "description": "A library to adapt callback-oriented code to async/await",
   "author": "Castle Lemongrab, a subsidiary of Baby Britain, Ltd.",
@@ -15,7 +15,7 @@
     "chai-as-promised": "^7.1.1"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha test/unit"
   },
   "black": {
     "lives": "matter"

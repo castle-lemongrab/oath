@@ -19,7 +19,10 @@ const Oath = {
     return (async (..._args) => {
       return new Promise((_resolve, _reject) => {
         return _fn(..._args, (_err, ..._rv) => {
-          return (_err ? _reject(_err) : _resolve(..._rv));
+          return (
+            _err ? _reject(_err) :
+              _resolve(_rv.length > 1 ? _rv : _rv[0])
+          );
         });
       });
     });
